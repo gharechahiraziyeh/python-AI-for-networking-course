@@ -15,4 +15,5 @@ print(default_encoding)
 
 # use argv in practice
 ip = sys.argv[1]
-print(subprocess.run(["ping", ip]))
+count = sys.argv[2]
+print(subprocess.run(["ping", ip, "-c", count]))
